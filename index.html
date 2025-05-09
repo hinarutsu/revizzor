@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Н. В. Гоголь — Ревизор</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Главная</a></li>
+        <li><a href="history.html">История</a></li>
+        <li><a href="plot.html">Сюжет</a></li>
+        <li><a href="critics.html">Критика</a></li>
+        <li><a href="authors.html">Авторы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Николай Васильевич Гоголь</h1>
+      <p class="subtitle"><i>Гений сатиры, автор «Ревизора»</i></p>
+    </section>
+
+    <section class="content">
+<div class="center-wrapper">
+<h2 class="center-title">Детство и юность</h2>
+</div>
+      <p>Николай Васильевич Гоголь родился 1 апреля 1809 года в селе Сорочинцы, Полтавской губернии (ныне — Украина). Его отец был мелким помещиком и автором комедий на украинском языке. С детства Гоголь проявлял интерес к театру, литературе и мистике.</p>
+
+
+      <div class="image-gallery">
+<figure>
+        <img src="gogol-childhood.jpg" alt="Дом, где родился Гоголь" class="zoom-img">
+<figcaption><i>Дом, где родился Н.В. Гоголь</i></figcaption>
+</figure>
+<figure>
+        <img src="young-gogol.jpg" alt="Юный Гоголь" class="zoom-img">
+<figcaption><i>Портрет юного Гоголя</i></figcaption>
+</figure>
+
+<div class="center-wrapper">
+<h2 class="center-title">Литературный путь</h2>
+</div>
+      <p>В 1828 году Гоголь отправился в Петербург в поисках литературной славы. Его первое произведение — поэма «Ганц Кюхельгартен» — не имела успеха, и он сжёг все оставшиеся экземпляры. Настоящая слава пришла после «Вечеров на хуторе близ Диканьки» — сборника, насыщенного украинским фольклором, юмором и мистикой.</p>
+      <p>Позже Гоголь создал цикл «Петербургские повести», где раскрыл абсурдность городской жизни. «Шинель», «Нос», «Портрет» — всё это стало классикой русской прозы.</p>
+
+<div class="center-wrapper">
+<h2 class="center-title">Ревизор</h2>
+</div>
+      <p>Пьеса «Ревизор» написана в 1835 году. Гоголю помог Александр Пушкин, рассказав реальную историю, когда чиновники провинциального города перепутали обычного человека с ревизором. Это вдохновило Гоголя на сатиру о страхе перед властью, коррупции и лицемерии. Сам Гоголь говорил: «В «Ревизоре» я решился собрать в одну кучу всё дурное в России...»</p>
+
+      <div class="image-gallery">
+<figure>
+        <img src="revizor-stage.jpg" alt="Сцена из Ревизора" class="zoom-img">
+<figcaption><i>Сцена из спектакля "Ревизор"</i></figcaption>
+</figure>
+<figure>
+        <img src="gogol-writing.jpg" alt="Гоголь пишет" class="zoom-img">
+<figcaption><i>Портрет Гоголя за письмом</i></figcaption>
+</figure>
+      </div>
+
+<div class="center-wrapper">
+<h2 class="center-title">Интересные факты</h2>
+</div>
+      <ul class="facts">
+        <li>Гоголь сжёг второй том «Мертвых душ» — считая его недостойным.</li>
+        <li>Он придерживался строгих религиозных взглядов, под конец жизни почти не ел и жил как отшельник.</li>
+        <li>Имел острое чувство юмора, но часто страдал от депрессии.</li>
+        <li>Боялся быть похороненным заживо — его могила позже была найдена пустой.</li>
+      </ul>
+
+<section class="quotes">
+  <h2 class="center-title">Цитаты</h2>
+  <div class="quote-block">
+    «Как ни глупы слова дурака, а иногда бывают они достаточны, чтобы смутить умного человека.»
+  </div>
+  <div class="quote-block">
+    «Обращаться с словом нужно честно. Оно есть высший подарок Бога человеку.»
+  </div>
+ </section>
+
+</main>
+
+  <footer>
+    <p>&copy; 2025 Школьный проект. Все права защищены.</p>
+  </footer>
+<!-- Модальное окно -->
+<div class="modal" id="modal">
+  <img src="" alt="Увеличенное изображение" id="modal-img">
+</div>
+
+<script>
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+
+  document.querySelectorAll(".zoom-img").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.classList.add("active");
+      modalImg.src = img.src;
+    });
+  });
+
+  modal.addEventListener("click", () => {
+    modal.classList.remove("active");
+  });
+</script>
+</body>
+</html>

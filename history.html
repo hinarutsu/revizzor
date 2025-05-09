@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>История создания — Ревизор</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="with-background">
+
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="history.html" class="active">История</a></li>
+        <li><a href="plot.html">Сюжет</a></li>
+        <li><a href="critics.html">Критика</a></li>
+        <li><a href="authors.html">Авторы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>История создания</h1>
+      <p class="subtitle">Как родилась идея великой комедии Гоголя</p>
+    </section>
+
+    <section class="content">
+      <div class="center-wrapper">
+        <h2 class="center-title">Замысел и вдохновение</h2>
+      </div>
+      <p class="highlight"> Николай Васильевич Гоголь написал «Ревизора» в 1836 году. <strong>История началась с рассказа Пушкина о случае, когда в одном уездном городе за важного чиновника приняли случайного человека.</strong> Эта история вдохновила Гоголя создать сатирическое произведение, высмеивающее чиновничество, страх, ложь и показуху.</p>
+<p>Гоголь долго обдумывал структуру комедии. Он хотел показать Россию такой, какая она есть: с бюрократами, коррупцией, страхом перед начальством. Сам он говорил, что хотел посмеяться над всем фальшивым и пошлым.   </p>
+
+      <div class="image-gallery">
+        <figure>
+          <img src="pushkin-gogol.jpg" alt="Гоголь и Пушкин" class="zoom-img"/>
+          <figcaption><i>Пушкин делится анекдотом, который вдохновил Гоголя</i></figcaption>
+        </figure>
+        <figure>
+          <img src="gogol-writing-2.jpg" alt="Гоголь пишет пьесу" class="zoom-img"/>
+          <figcaption><i>Гоголь работает над текстом "Ревизора"</i></figcaption>
+        </figure>
+      </div>
+
+      <div class="center-wrapper">
+        <h2 class="center-title">Петербургский период</h2>
+      </div>
+      <p>Работа шла в <strong>Петербурге</strong>. Гоголь уединялся, переживал и выверял каждую сцену. Он боялся осуждения, но понимал, насколько важен его труд.</p>
+      <p class="highlight"> «Ревизор» был написан стремительно — за несколько месяцев. Уже <strong>весной 1836 года пьеса вышла на сцену Александринского театра</strong>. Реакция была взрывной: публика смеялась, чиновники возмущались, но даже сам император Николай I поддержал постановку.</p>
+ <p>Гоголь воспринял критику тяжело, уехал за границу, но его произведение стало символом честной сатиры и важным шагом в русской литературе. Оно показало, что театр способен менять восприятие общества.</p>
+<p>   Впоследствии Гоголь не раз возвращался к теме «Ревизора» и даже задумывался о продолжении. Комедия вошла в историю как выдающийся пример сатиры и разоблачения пороков.
+    </p>
+
+      <div class="image-gallery">
+      <figure>
+        <img src="alexandrinsky-theater.jpg" alt="Александринский театр" class="zoom-img"/>
+        <figcaption><i>Александринский театр — место первой постановки</i></figcaption>
+      </figure>
+</div>
+
+      
+<div class="center-wrapper">
+        <h2 class="center-title">Что говорил сам автор</h2>
+      </div>
+      <p>      Гоголь говорил: «В «Ревизоре» я решился собрать в одну кучу всё дурное в России, какое я знал». Он хотел, чтобы люди узнали себя и смеялись над собой. Не все поняли сатиру — но пьеса стала бессмертной.</p>
+
+      <div class="image-gallery">
+        <figure>
+          <img src="actor-revizor.jpg" alt="Хлестаков на сцене" class="zoom-img"/>
+          <figcaption><i>Актёр в образе Хлестакова, Игорь Горбачёв. Постановка 1952 года</i></figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Школьный проект. Все права защищены.</p>
+  </footer>
+<!-- Модальное окно -->
+<div class="modal" id="modal">
+  <img src="" alt="Увеличенное изображение" id="modal-img">
+</div>
+
+<script>
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+
+  document.querySelectorAll(".zoom-img").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.classList.add("active");
+      modalImg.src = img.src;
+    });
+  });
+
+  modal.addEventListener("click", () => {
+    modal.classList.remove("active");
+  });
+</script>
+</body>
+</html>
